@@ -34,11 +34,30 @@ div{
 ul{
     display: inline-flex;
 }
-afari 4.0 - 8.0 */
-@-webkit-keyframes example {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
+.diaporama {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  background-image: url("images/bn1.jpg");
+  background-size: cover;
+  
+  animation-name: slide;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+ 
+}
+
+@keyframes slide {
+  
+  0%  {background-image: url(images/bn1.jpg)}
+  33%  {background-image: url(images/bn2.jpg);}
+  66%  {background-image: url(images/bn3.jpg);}
+ 
+}
+.cours{
+    
+}
+
 
